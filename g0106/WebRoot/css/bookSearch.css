@@ -3,7 +3,7 @@
 	width:510px;
 	border-radius: 4px;
 	background-color:white;
-	opacity:0.5;
+	opacity:0.7;
 	margin:0 auto;
 }
 
@@ -57,13 +57,16 @@
   font-size:16px;
   font-width:bold;
   color:black;
+
 }
 .fancy-spinbox ul.dropdown {
   position: absolute;
   top:54px;
   left: -9999px;
   z-index: 999;
-  color: #16425B;
+  color: black;
+    background-color:white;
+	opacity:0.7;
 
 }
 .fancy-spinbox ul.dropdown:empty {
@@ -73,8 +76,7 @@
   overflow: hidden;
 }
 .fancy-spinbox ul.dropdown li.selected, .fancy-spinbox ul.dropdown li.selected * {
-  color: #F7EACF;
-
+  color:red;
 }
 .fancy-spinbox ul.dropdown li:hover, .fancy-spinbox ul.dropdown li:hover * {
   color: #16425B;
@@ -119,7 +121,7 @@
 }
 
 /*****************************
-****À—À˜øÚÃ·Ωª∞¥≈•****
+****ÊêúÁ¥¢Ê°ÜÊèê‰∫§ÊåâÈíÆ****
 *******************************/
 .bookInput{
   padding:0 10px;
