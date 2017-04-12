@@ -1,0 +1,153 @@
+.searchBox{
+	height:60px;
+	width:510px;
+	border-radius: 4px;
+	background-color:#808080;
+	opacity:0.5;
+	margin:0 auto;
+}
+
+/*
+ * jquery.fancyspinbox.js
+ * version 0.1.0
+ * (c) 2015 Maya Kokits
+ * License: MIT
+ */
+.fancy-spinbox {
+	padding:0;
+	margin-top:10px;
+	 float:left;
+  box-sizing: content-box;
+  height:40px;
+  padding: 0 1.8rem 0 0;
+  display: inline-block;
+  position: relative;
+  color: #16425B;
+
+  outline: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fancy-spinbox .crop {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: inline-block;
+  overflow: hidden;
+}
+.fancy-spinbox ul {
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  list-style: none;
+  text-align: left;
+}
+.fancy-spinbox li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 0.5rem 0 0.5rem;
+  white-space: nowrap;
+  font-size:16px;
+  font-width:bold;
+  color:black;
+}
+.fancy-spinbox ul.dropdown {
+  position: absolute;
+  top:54px;
+  left: -9999px;
+  z-index: 999;
+  color: #16425B;
+
+}
+.fancy-spinbox ul.dropdown:empty {
+  display: none;
+}
+.fancy-spinbox ul.dropdown li {
+  overflow: hidden;
+}
+.fancy-spinbox ul.dropdown li.selected, .fancy-spinbox ul.dropdown li.selected * {
+  color: #F7EACF;
+
+}
+.fancy-spinbox ul.dropdown li:hover, .fancy-spinbox ul.dropdown li:hover * {
+  color: #16425B;
+  background-color: #81C3D7;
+}
+.fancy-spinbox .buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.8rem;
+}
+.fancy-spinbox button {
+  position: relative;
+  width: 1.5rem;
+  height: 1rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  display: block;
+  outline: 0;
+  cursor: default;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.fancy-spinbox button span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  display: block;
+}
+
+.fancy-spinbox button span.triangle-down {
+  border-top: 7px solid #16425B;
+  top: 7px;
+  right: 0.5rem;
+
+}
+
+/*****************************
+****ËÑË÷¿òÌá½»°´Å¥****
+*******************************/
+.bookInput{
+  padding:0 10px;
+  margin:0;
+  height:54px;
+  width:340px;
+  float:left;
+  position: relative;
+
+  background-color:  transparent;
+  outline: none;
+  border:none;
+  font-size:16px;
+}
+.bookInput:hover{
+	background-color:;
+}
+.bookSubmit{
+  padding:0;
+  margin:0;
+  height:54px;
+  width:54px;
+  float:left;
+  background:url(../images/search-icon.png) no-repeat ;
+  background-position:50% 50%;
+  outline: none;
+  border:none;
+}
+.bookSubmit:hover{
+	background-color:;
+}
