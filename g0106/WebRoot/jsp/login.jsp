@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html >
 <head>
@@ -15,7 +16,7 @@
 <div class="header">
 	<div class="container">
 		<div class="logo">
-			<a href="../index.html"><img src="../images/logo3.jpg" width="900px" height="130px"></a>
+			<a href="../index.jsp"><img src="../images/logo3.jpg" width="900px" height="130px"></a>
 		</div>
 	</div>
  </div>

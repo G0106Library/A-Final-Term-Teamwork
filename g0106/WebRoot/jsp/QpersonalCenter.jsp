@@ -1,7 +1,8 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>研讨室管理页面</title>
+<title>个人中心</title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../css/table.css" rel="stylesheet" type="text/css" media="all"/>
@@ -12,11 +13,11 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="../js/modernizr.custom.97074.js"></script>
+<script src="。./js/modernizr.custom.97074.js"></script>
 <script src="../js/jquery-1.8.3.min.js"></script>
 <!---->
-<script type="text/javascript" src="../js/move-top.js"></script>
-<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
  <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){     
@@ -33,44 +34,54 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      <div class="header">
          <div class="container">
              <div class="logo">
-                <a href="index.html"><img src="../images/logo2.jpg" width="700px" height="100px"></a>
+                <a href="../index.jsp"><img src="../images/logo2.jpg" width="700px" height="100px"></a>
                 <input type="button" class="mylogin" value="我的图书馆" align="right" onclick="window.open('loginindex/index.html')" >
                 <input type="text" class="loginstate" id="loginstate" value="您还未登录" readonly>
              </div>
          </div>
      </div>  
+
      <header>
-        <h1>研讨室使用状态</h1>
+        <h1>个人中心<br></h1><br>
     </header>
 
     <div class="container" style="margin-top:50px;">
-        <div class="row clearfix">
-            <div class="col-md-12 column">  
-                 <table class="table"  id="myTable">
-                    <thead>
-                        <tr>
-                            <th>研讨室编号</th>
-                            <th> 使用状态</th>
-                            <th>使用时间</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td> 空闲</td>
-                            <td>01/04/2012</td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td> 使用中</td>
-                            <td>01/04/2012</td>
-                        </tr>
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+             <nav>
+                <h3>
+                   查看个人信息
+                </h3>
+             </nav>
+            <table class="table"  id="myTable">
+                <thead>
+                    <tr>    <th> </th>     <th> </th>   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>用户姓名 </td> <td>史瑞克</td>
+                    </tr>
+                    <tr>
+                        <td>用户性别 </td> <td>男</td>
+                    </tr>
+                    <tr>
+                        <td>出生日期 </td> <td>2007</td>
+                    </tr>
+                    <tr>
+                        <td>联系电话</td> <td>88688688688</td>
+                    </tr>
                 </tbody>
             </table>
-            </div>
+        </div>
+        <div class="col-md-6 column">
+            <nav><h3> 修改个人信息</h3></nav>
+            <nav>   </nav>  <nav>   </nav>
+            <nav> <p><a class="btn btn-primary btn-large" href="#">修改个人密码</a></p><br></nav>
+            <nav> <p><a class="btn btn-primary btn-large" href="#">修改联系电话</a></p></nav>
         </div>
     </div>
-
+</div>
+</div>
 <div class="footer">
      <div class="container">
          <div class="copywrite">

@@ -4,8 +4,108 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name></display-name>	
+  <display-name></display-name>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>daoBEBook</servlet-name>
+    <servlet-class>dao.BE.daoBEBook</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBookSearch</servlet-name>
+    <servlet-class>servlet.servBookSearch</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servAddChattingRoom</servlet-name>
+    <servlet-class>serv.BE.servAddChattingRoom</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>EncodingFilter</servlet-name>
+    <servlet-class>servlet.EncodingFilter</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servSearchChattingRoom</servlet-name>
+    <servlet-class>serv.BE.servSearchChattingRoom</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBorrow_ReturnCR</servlet-name>
+    <servlet-class>serv.BD.servBorrow_ReturnCR</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servDelChattingRoom</servlet-name>
+    <servlet-class>serv.BE.servDelChattingRoom</servlet-class>
+  </servlet>
+
+
+ 
+
+
+  
+  <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>servlet.EncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encode</param-name>
+  		<param-value>utf-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+
+
+  <servlet-mapping>
+    <servlet-name>daoBEBook</servlet-name>
+    <url-pattern>/daoBEBook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>servBookSearch</servlet-name>
+    <url-pattern>/servlet/servBookSearch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>servAddChattingRoom</servlet-name>
+    <url-pattern>/servlet/servAddChattingRoom</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>EncodingFilter</servlet-name>
+    <url-pattern>/servlet/EncodingFilter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servSearchChattingRoom</servlet-name>
+    <url-pattern>/servlet/servSearchChattingRoom</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBorrow_ReturnCR</servlet-name>
+    <url-pattern>/servlet/servBorrow_ReturnCR</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servDelChattingRoom</servlet-name>
+    <url-pattern>/servlet/servDelChattingRoom</url-pattern>
+  </servlet-mapping>
+ 
+  
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
 </web-app>

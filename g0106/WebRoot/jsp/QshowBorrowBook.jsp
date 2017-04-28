@@ -1,4 +1,4 @@
-a<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -31,7 +31,7 @@ function check(){
 	  	<div class="header">
 			 <div class="container">
 				 <div class="logo">
-					<a href="../index.html"><img src="../images/logo2.jpg" width="700px" height="100px"></a>
+					<a href="../index.jsp"><img src="../images/logo2.jpg" width="700px" height="100px"></a>
 	                <input type="button" class="mylogin" value="我的图书馆" align="right" onclick="window.open('../jsp/login.html')" >
 	                <input type="text" class="loginstate" id="loginstate" value="您还未登录" readonly>
 				 </div>
